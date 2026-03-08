@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenHabit | Master your daily routines</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+                ZenHabit
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how">How it Works</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <a href="#download" class="btn btn-primary btn-sm btn-pill">Get the App</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-gradient overflow-hidden">
+        <div class="container hero-container">
+            <div class="hero-text animate-left">
+                <div class="pill-badge"><i class="fa-solid fa-star"></i> App of the Day 2026</div>
+                <h1>Build habits that actually <span class="highlight">stick.</span></h1>
+                <p>ZenHabit uses behavioral psychology to help you craft the perfect morning routine, sleep better, and
+                    find your focus—all from your pocket.</p>
+
+                <div class="download-buttons">
+                    <a href="#" class="store-btn">
+                        <i class="fa-brands fa-apple"></i>
+                        <div class="store-text">
+                            <span class="small">Download on the</span>
+                            <span class="large">App Store</span>
+                        </div>
+                    </a>
+                    <a href="#" class="store-btn google">
+                        <i class="fa-brands fa-google-play"></i>
+                        <div class="store-text">
+                            <span class="small">GET IT ON</span>
+                            <span class="large">Google Play</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="social-proof">
+                    <div class="avatars">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="User">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="User">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="User">
+                    </div>
+                    <span>Trusted by <strong>2M+</strong> mindful users worldwide.</span>
+                </div>
+            </div>
+
+            <!-- Floating Phones -->
+            <div class="hero-mockup animate-up-slow">
+                <div class="phone-wrapper back">
+                    <img src="https://images.unsplash.com/photo-1616469829941-c7200ed30009?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="App Screen Outline" class="phone-screen bg-mock">
+                    <div class="phone-frame"></div>
+                </div>
+                <div class="phone-wrapper front">
+                    <!-- Simulate App UI instead of just a static image for a better demo effect -->
+                    <div class="phone-screen app-ui">
+                        <div class="app-header">
+                            <div>ZenHabit</div>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="app-greeting">Good Morning, Alex</div>
+                        <div class="app-progress">
+                            <span>Daily Goal</span>
+                            <div class="progress-bar">
+                                <div class="fill" style="width:75%"></div>
+                            </div>
+                        </div>
+                        <div class="habit-list">
+                            <div class="habit checked"><i class="fa-solid fa-check"></i> Drink Water</div>
+                            <div class="habit checked"><i class="fa-solid fa-check"></i> Meditate 10m</div>
+                            <div class="habit"><i class="fa-regular fa-circle"></i> Read 10 Pages</div>
+                        </div>
+                    </div>
+                    <div class="phone-frame"></div>
+                </div>
+                <!-- Floating Elements -->
+                <div class="float-item fl-1"><i class="fa-solid fa-fire"></i> 14 Day Streak!</div>
+                <div class="float-item fl-2"><i class="fa-solid fa-medal"></i> Goal Reached</div>
+            </div>
+        </div>
+
+        <!-- Bottom Wave -->
+        <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.3,191.24,103.18,245.9,88.45,284.6,67.63,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features section-pad" id="features">
+        <div class="container text-center max-w-lg">
+            <div class="section-title reveal-up">
+                <h2>Everything you need. Nothing you don't.</h2>
+                <p>Designed to stay out of your way while keeping you laser-focused on your goals.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="feature-grid">
+                <!-- Box 1 -->
+                <div class="feat-box reveal-up delay-1">
+                    <div class="icon-orb bg-green"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Smart Analytics</h3>
+                    <p>Track your completion rates, view weekly trends, and identify which habits stick best.</p>
+                </div>
+                <!-- Box 2 -->
+                <div class="feat-box reveal-up delay-2">
+                    <div class="icon-orb bg-purple"><i class="fa-solid fa-bell-concierge"></i></div>
+                    <h3>Gentle Reminders</h3>
+                    <p>Set location or time-based notifications that nudge you without being annoying.</p>
+                </div>
+                <!-- Box 3 -->
+                <div class="feat-box reveal-up delay-3">
+                    <div class="icon-orb bg-orange"><i class="fa-solid fa-user-group"></i></div>
+                    <h3>Social Accountability</h3>
+                    <p>Optionally share your progress with close friends and keep each other motivated.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works (Side by side) -->
+    <section class="how-it-works section-pad bg-light" id="how">
+        <div class="container">
+            <div class="split-layout">
+                <div class="split-text reveal-left">
+                    <h2>Less friction. More action.</h2>
+                    <p>Building a habit takes an average of 66 days. We've optimized every interaction to ensure you
+                        make it past the finish line.</p>
+
+                    <ul class="steps-list">
+                        <li>
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <h4>Start Small</h4>
+                                <p>Pick from our curated list of 2-minute micro-habits.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <h4>Gamify Your Life</h4>
+                                <p>Earn points, unlock themes, and maintain your fire streak.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <h4>Witness Growth</h4>
+                                <p>Review your beautiful monthly charts and celebrate wins.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Single Phone Mockup -->
+                <div class="split-image reveal-right">
+                    <div class="phone-standalone">
+                        <div class="phone-screen bg-mock2">
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                alt="App interface">
+                        </div>
+                        <div class="phone-frame"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA / QR Code -->
+    <section class="download-cta bg-primary bg-pattern" id="download">
+        <div class="container cta-container reveal-up">
+            <div class="cta-text">
+                <h2>Ready to transform your routine?</h2>
+                <p>Join millions of users who have already upgraded their lives with ZenHabit. Available for iOS and
+                    Android.</p>
+
+                <div class="download-buttons m-top">
+                    <a href="#" class="store-btn">
+                        <i class="fa-brands fa-apple"></i>
+                        <div class="store-text">
+                            <span class="small">Download on the</span>
+                            <span class="large">App Store</span>
+                        </div>
+                    </a>
+                    <a href="#" class="store-btn google">
+                        <i class="fa-brands fa-google-play"></i>
+                        <div class="store-text">
+                            <span class="small">GET IT ON</span>
+                            <span class="large">Google Play</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="qr-code-box">
+                <p><strong>Scan to download</strong></p>
+                <div class="qr-placeholder">
+                    <i class="fa-solid fa-qrcode"></i>
+                </div>
+                <p class="small">Camera app compatible</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-links">
+            <div class="brand">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+                    ZenHabit
+                </div>
+                <p class="desc">Mindful habit tracking made simple.</p>
+            </div>
+
+            <div class="link-group">
+                <h4>Product</h4>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Changelog</a>
+            </div>
+
+            <div class="link-group">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="link-group">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="container bottom-footer border-top">
+            <p>&copy; 2026 ZenHabit Inc. All rights reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

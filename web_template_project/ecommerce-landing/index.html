@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundVibe | Premium Audio Gear</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header / Nav -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Sound<span>Vibe.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#shop">Store</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button aria-label="Account"><i class="fa-regular fa-user"></i></button>
+                <button id="cart-btn" aria-label="Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">2</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="tag">New Release</span>
+                    <h1>Hear Every Detail. Feel Every Beat.</h1>
+                    <p>We spent 2 years perfecting the audio profile of our newest over-ear headphones. Crystal clear
+                        highs, deep punchy bass, and 40 hours of battery life.</p>
+                    <a href="#shop" class="btn btn-primary">Shop The Vibe Pro</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="SoundVibe Pro Wireless Headphones">
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid Section -->
+        <section class="shop" id="shop">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Our Top Picks</h2>
+                    <p>Audiophile grade equipment without the audiophile price tag.</p>
+                </header>
+
+                <div class="product-list">
+                    <!-- Product 1 -->
+                    <article class="product">
+                        <span class="discount-badge">Save 15%</span>
+                        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Vibe Pro Wireless Black">
+                        <div class="product-info">
+                            <h3>Vibe Pro Wireless - Matte Black</h3>
+                            <div class="price">
+                                <span class="current">$249.00</span>
+                                <span class="old">$299.00</span>
+                            </div>
+                            <button class="btn btn-secondary add-btn">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product">
+                        <img src="https://images.unsplash.com/photo-1583394838173-60829ac1523a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Vibe Studio Over-Ear White">
+                        <div class="product-info">
+                            <h3>Vibe Studio Over-Ear - Snow White</h3>
+                            <div class="price">
+                                <span class="current">$199.00</span>
+                            </div>
+                            <button class="btn btn-secondary add-btn">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product">
+                        <span class="new-badge">Just Added</span>
+                        <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Vibe Buds Ivory">
+                        <div class="product-info">
+                            <h3>Vibe Buds - Ivory</h3>
+                            <div class="price">
+                                <span class="current">$129.00</span>
+                            </div>
+                            <button class="btn btn-secondary add-btn">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container box">
+                <h2>Join the SoundVibe Community</h2>
+                <p>Drop your email below and we'll send you a 10% off coupon for your first order. No spam, just good
+                    vibes and occasional product drops.</p>
+                <form id="subscribe-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Simple Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="company-info">
+                <h3>Sound<span>Vibe.</span></h3>
+                <p>Built by music lovers, for music lovers. We're on a mission to bring studio-quality sound to
+                    everyone.</p>
+            </div>
+            <div class="links">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2026 SoundVibe Audio. Made with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fa-solid fa-check-circle"></i> Item added to your cart!
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

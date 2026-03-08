@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Belvedere | Luxury Residence</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Mulish:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header / Nav -->
+    <header class="header">
+        <div class="container nav-content">
+            <a href="#" class="logo">Belvedere.</a>
+            <div class="nav-links">
+                <a href="#gallery">Gallery</a>
+                <a href="#details">Details</a>
+                <a href="#floorplan">Floor Plan</a>
+                <a href="#location">Neighborhood</a>
+            </div>
+            <a href="#contact" class="btn btn-primary">Schedule Viewing</a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Full Screen Image) -->
+    <section class="hero transition-all">
+        <div class="hero-bg"
+            style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content container animate-fade-up">
+            <div class="badge">Just Listed</div>
+            <h1>845 Skyline Boulevard</h1>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Beverly Hills, CA 90210</p>
+
+            <div class="key-features">
+                <div class="feature-item">
+                    <span class="value">$12,500,000</span>
+                    <span class="label">Asking Price</span>
+                </div>
+                <div class="feature-item">
+                    <span class="value">6</span>
+                    <span class="label">Bedrooms</span>
+                </div>
+                <div class="feature-item">
+                    <span class="value">8</span>
+                    <span class="label">Bathrooms</span>
+                </div>
+                <div class="feature-item">
+                    <span class="value">10,250</span>
+                    <span class="label">Square Feet</span>
+                </div>
+            </div>
+
+            <a href="#contact" class="btn btn-outline-light m-top">Request Private Tour</a>
+        </div>
+    </section>
+
+    <!-- Sticky Overview Bar -->
+    <div class="sticky-bar hidden">
+        <div class="container sticky-content">
+            <div class="sticky-left">
+                <h4>845 Skyline Blvd</h4>
+                <span>Beverly Hills, CA</span>
+            </div>
+            <div class="sticky-center">
+                <span>$12,500,000</span>
+                <span class="divider">|</span>
+                <span>6 Beds</span>
+                <span class="divider">|</span>
+                <span>8 Baths</span>
+            </div>
+            <div class="sticky-right">
+                <a href="#contact" class="btn btn-primary btn-sm">Contact Agent</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Intro Text & Image Grid -->
+    <section class="overview section-pad" id="details">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-text reveal-left">
+                    <h2 class="section-title">An Architectural Masterpiece</h2>
+                    <p class="lead-text">Perched gracefully atop the prestigious hills, The Belvedere is a masterclass
+                        in modern luxury and seamless indoor-outdoor living.</p>
+                    <p>Designed by renowned architect Jonathan Myers, this estate features soaring 20-foot ceilings,
+                        imported Italian marble, and panoramic floor-to-ceiling glass walls that frame breathtaking
+                        ocean and city skyline views. Every detail, from the state-of-the-art chef's kitchen to the
+                        zero-edge infinity pool, has been meticulously crafted for the most discerning buyer.</p>
+
+                    <ul class="amenities-list">
+                        <li><i class="fa-solid fa-check"></i> Smart Home Integration (Control4)</li>
+                        <li><i class="fa-solid fa-check"></i> 500-Bottle Climate Controlled Wine Cellar</li>
+                        <li><i class="fa-solid fa-check"></i> 12-Seat Dolby Atmos Home Theater</li>
+                        <li><i class="fa-solid fa-check"></i> 4-Car Showcase Garage</li>
+                    </ul>
+                </div>
+
+                <div class="overview-images reveal-right">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Living Room" class="main-img">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Kitchen" class="sub-img offset">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography Gallery Carousel (simplified visual representation) -->
+    <section class="gallery section-pad bg-light" id="gallery">
+        <div class="container text-center">
+            <h2 class="section-title reveal-up">Exclusive Gallery</h2>
+        </div>
+
+        <div class="gallery-wrapper reveal-up delay-1">
+            <div class="gallery-track">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Master Bath">
+                <img src="https://images.unsplash.com/photo-1600122956276-80f0896791b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Patio">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Home Theater">
+                <img src="https://images.unsplash.com/photo-1600607687644-aac4c15cecb1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Wine Cellar">
+            </div>
+            <!-- Pagination hint -->
+            <div class="gallery-controls">
+                <button class="nav-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="nav-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Floor Plans -->
+    <section class="floorplan section-pad" id="floorplan">
+        <div class="container text-center">
+            <h2 class="section-title reveal-up">Floor Plans</h2>
+
+            <div class="fp-tabs reveal-up delay-1">
+                <button class="fp-tab active" data-target="ground">Ground Level</button>
+                <button class="fp-tab" data-target="upper">Upper Level</button>
+                <button class="fp-tab" data-target="lower">Lower Level</button>
+            </div>
+
+            <div class="fp-content reveal-up delay-2">
+                <!-- Mockup of a technical blueprint view -->
+                <div class="fp-image-container">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                        alt="Architectural Blueprint" style="filter: grayscale(100%) contrast(120%) opacity(0.8);">
+                    <div class="overlay-text">Interactive Plan Loading...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Agent -->
+    <section class="contact-section section-pad bg-dark" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Agent Info -->
+                <div class="agent-info reveal-left">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Listing Agent" class="agent-photo">
+                    <h3>Marcus Sterling</h3>
+                    <p class="title">Luxury Estate Director</p>
+                    <p class="license">DRE #01234567</p>
+
+                    <div class="agent-links">
+                        <a href="tel:3105550199"><i class="fa-solid fa-phone"></i> (310) 555-0199</a>
+                        <a href="mailto:marcus@sterlingestates.com"><i class="fa-solid fa-envelope"></i>
+                            marcus@sterlingestates.com</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper reveal-right">
+                    <h2>Inquire About This Property</h2>
+                    <p>Schedule a private showing or request more information.</p>
+
+                    <form id="contactForm" class="inquiry-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="First Name *" required>
+                            <input type="text" placeholder="Last Name *" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" placeholder="Email Address *" required>
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        <select required>
+                            <option value="" disabled selected>I am interested in...</option>
+                            <option value="tour">Scheduling a Private Tour</option>
+                            <option value="info">Requesting the Offering Memorandum</option>
+                            <option value="other">General Question</option>
+                        </select>
+                        <textarea rows="4" placeholder="Your Message"></textarea>
+
+                        <button type="submit" class="btn btn-primary btn-block">Send Inquiry</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark border-top">
+        <div class="container text-center">
+            <h2 class="logo">Belvedere.</h2>
+            <p class="disclaimer">All information is deemed reliable but not guaranteed. Dimensions are approximate.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Sterling Luxury Estates. Equal Housing Opportunity.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

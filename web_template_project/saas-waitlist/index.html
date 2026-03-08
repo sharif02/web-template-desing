@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova | AI Video Generation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- Background Elements -->
+    <div class="bg-glow top-left"></div>
+    <div class="bg-glow bottom-right"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-sparkles text-gradient"></i> Nova<span>.ai</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#demo">Preview</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <a href="#waitlist" class="btn btn-primary btn-sm">Join Waitlist</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero target-section">
+        <div class="container hero-container text-center">
+
+            <a href="#update" class="launch-badge fade-up">
+                <span class="pulse-dot"></span>
+                <span>Nova V2 Private Beta is live</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <h1 class="hero-title fade-up delay-1">
+                Text to cinematic video.<br>
+                <span class="text-gradient">In seconds.</span>
+            </h1>
+
+            <p class="hero-subtitle fade-up delay-2">
+                The world's most advanced AI video generation model. Create photorealistic, high-fidelity videos simply
+                from a text prompt.
+            </p>
+
+            <div class="hero-cta fade-up delay-3" id="waitlist">
+                <form id="waitlistForm" class="waitlist-form">
+                    <div class="input-wrapper">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="emailInput" placeholder="Enter your email address..." required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Get Early Access</button>
+                </form>
+                <p class="waitlist-status">Join <span>84,392</span> creators already on the waitlist.</p>
+
+                <!-- Success State -->
+                <div id="successMsg" class="success-message hidden">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>You're on the list! Keep an eye on your inbox.</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Video Dashboard Mockup -->
+        <div class="dashboard-preview fade-up delay-4" id="demo">
+            <div class="mac-window">
+                <div class="mac-header">
+                    <div class="mac-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="mac-title">Nova Studio - project_cyberpunk.nv</div>
+                </div>
+                <div class="mac-body">
+                    <!-- Dashboard UI Mockup -->
+                    <div class="dash-sidebar">
+                        <div class="dash-item active"><i class="fa-solid fa-wand-magic-sparkles"></i> Generate</div>
+                        <div class="dash-item"><i class="fa-solid fa-folder"></i> Assets</div>
+                        <div class="dash-item"><i class="fa-solid fa-gear"></i> Settings</div>
+                    </div>
+                    <div class="dash-main">
+                        <div class="prompt-box">
+                            "A cinematic wide shot of a futuristic cyberpunk city at night, neon reflections on wet
+                            pavement, flying cars passing by, 8k resolution, photorealistic."
+                        </div>
+                        <div class="video-placeholder">
+                            <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                alt="Cyberpunk City">
+                            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features target-section" id="features">
+        <div class="container">
+            <div class="section-title text-center reveal">
+                <h2 class="text-gradient">Limitless Creativity</h2>
+                <p>Break the boundaries of traditional video production.</p>
+            </div>
+
+            <div class="feature-grid">
+                <!-- Feature 1 -->
+                <div class="glass-card reveal delay-1">
+                    <div class="feat-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Real-time Generation</h3>
+                    <p>Our proprietary architecture renders 1080p video up to 50x faster than traditional diffusion
+                        models.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="glass-card reveal delay-2">
+                    <div class="feat-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h3>Camera Control</h3>
+                    <p>Direct your scene. Control pan, tilt, zoom, and even specific lens types and focal lengths
+                        directly from text.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="glass-card reveal delay-3">
+                    <div class="feat-icon"><i class="fa-solid fa-people-group"></i></div>
+                    <h3>Multi-Character</h3>
+                    <p>Maintain consistent character identities and complex interactions across multiple generated
+                        scenes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing (Toggle pattern) -->
+    <section class="pricing target-section" id="pricing">
+        <div class="container text-center">
+            <div class="section-title reveal">
+                <h2>Simple, transparent pricing</h2>
+                <p>Start for free, upgrade when you need more power.</p>
+            </div>
+
+            <div class="pricing-toggle reveal">
+                <span class="toggle-label">Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label">Yearly <span class="discount-pill">Save 20%</span></span>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Plan 1 -->
+                <div class="glass-card pricing-card reveal delay-1">
+                    <div class="plan-header">
+                        <h3>Creator</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="19" data-yearly="15">19</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <p>Perfect for hobbyists and solo creators.</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> 100 Gen Credits / month</li>
+                        <li><i class="fa-solid fa-check"></i> 1080p Resolution</li>
+                        <li><i class="fa-solid fa-check"></i> Standard Rendering</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Custom Style Training</li>
+                    </ul>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="glass-card pricing-card popular reveal delay-2">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="49" data-yearly="39">49</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <p>For professional filmmakers and agencies.</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> 500 Gen Credits / month</li>
+                        <li><i class="fa-solid fa-check"></i> 4K Resolution</li>
+                        <li><i class="fa-solid fa-check"></i> Priority Rendering Fleet</li>
+                        <li><i class="fa-solid fa-check"></i> Custom Style Training</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content border-top">
+            <div class="footer-left">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-sparkles text-gradient"></i> Nova<span>.ai</span>
+                </a>
+                <p class="footer-desc">The future of generative video.</p>
+            </div>
+            <div class="footer-right">
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <p class="copyright">&copy; 2026 Nova AI Labs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

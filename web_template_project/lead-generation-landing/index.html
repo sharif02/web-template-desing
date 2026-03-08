@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Growth | B2B Lead Generation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <i class="fa-solid fa-chart-pie color-primary"></i> Nexus<span>Growth</span>
+            </div>
+            <div class="contact-header">
+                <span class="d-none-mobile">Questions? Talk to an expert:</span>
+                <a href="tel:+18005550199" class="phone-link"><i class="fa-solid fa-phone"></i> 1-800-555-0199</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Form -->
+    <section class="hero-split">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-grid">
+
+                <!-- Value Proposition -->
+                <div class="hero-content animate-slide-in-left">
+                    <div class="pill-badge">#1 Rated Growth Platform 2026</div>
+                    <h1>Scale Your Business With High-Intent Leads.</h1>
+                    <p>Stop chasing unqualified prospects. Our AI-driven platform delivers exclusive, pipeline-ready
+                        leads directly to your sales team so you can focus on closing.</p>
+
+                    <ul class="benefit-list">
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Guaranteed 30% increase in connection
+                            rates.</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Seamless integration with Salesforce &
+                            HubSpot.</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Zero setup fees, cancel anytime.</li>
+                    </ul>
+
+                    <div class="trust-logos">
+                        <p>Trusted by innovative teams at:</p>
+                        <div class="logos-grid">
+                            <span><i class="fa-brands fa-aws"></i> Amazon</span>
+                            <span><i class="fa-brands fa-microsoft"></i> Microsoft</span>
+                            <span><i class="fa-brands fa-google"></i> Google</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Capture Form -->
+                <div class="hero-form-wrapper animate-slide-in-right">
+                    <div class="form-card">
+                        <h3>Get Your Free Growth Audit</h3>
+                        <p>Fill out the form below and one of our experts will contact you within 24 hours.</p>
+
+                        <form id="leadForm" class="lead-form">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" required placeholder="John Doe">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Work Email *</label>
+                                <input type="email" id="email" required placeholder="john@company.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="(555) 000-0000">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="revenue">Current Monthly Revenue *</label>
+                                <select id="revenue" required>
+                                    <option value="" disabled selected>Select an option...</option>
+                                    <option value="under-10k">Under $10k</option>
+                                    <option value="10k-50k">$10k - $50k</option>
+                                    <option value="50k-100k">$50k - $100k</option>
+                                    <option value="100k-plus">$100k+</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                                Get Started Now <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                            <p class="form-disclaimer"><i class="fa-solid fa-lock"></i> Your information is secure. We
+                                never share your data.</p>
+                        </form>
+
+                        <!-- Success State (Hidden by default) -->
+                        <div id="successState" class="success-state hidden">
+                            <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+                            <h3>Request Received!</h3>
+                            <p>Thank you for reaching out. A growth specialist will review your details and contact you
+                                shortly.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section-pad bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2>Why Choose Nexus Growth?</h2>
+                <p>We combine cutting-edge technology with human expertise to deliver unparalleled results.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal-up delay-1">
+                    <div class="icon-wrapper"><i class="fa-solid fa-bullseye"></i></div>
+                    <h4>Hyper-Targeting</h4>
+                    <p>Our algorithms identify prospects who are actively searching for your solution, completely
+                        eliminating cold outreach.</p>
+                </div>
+
+                <div class="feature-card reveal-up delay-2">
+                    <div class="icon-wrapper"><i class="fa-solid fa-bolt"></i></div>
+                    <h4>Real-Time Delivery</h4>
+                    <p>Leads are pushed to your CRM the second they are verified, ensuring you strike while the iron is
+                        hot.</p>
+                </div>
+
+                <div class="feature-card reveal-up delay-3">
+                    <div class="icon-wrapper"><i class="fa-solid fa-chart-line"></i></div>
+                    <h4>Predictable ROI</h4>
+                    <p>With transparent pricing and guaranteed lead volumes, you can perfectly forecast your revenue
+                        growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonial -->
+    <section class="testimonial-section section-pad">
+        <div class="container text-center max-w-lg">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="reveal-up">
+                "Nexus Growth completely transformed our pipeline. Within 60 days, we saw a 400% increase in qualified
+                demos booked. Their platform isn't just a tool; it's a revenue engine."
+            </blockquote>
+            <div class="testimonial-author reveal-up delay-1">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                    alt="Sarah Jenkins">
+                <div class="author-info">
+                    <strong>Sarah Jenkins</strong>
+                    <span>VP of Sales, TechFlow Inc.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fa-solid fa-chart-pie color-primary"></i> Nexus<span>Growth</span>
+                    </div>
+                    <p>&copy; 2026 Nexus Growth Inc. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

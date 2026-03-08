@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osteria | Authentic Italian Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Simple Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Osteria.</a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservations" class="res-btn">Reservations</a></li>
+            </ul>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero" id="welcome">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="est">Established 2012</span>
+            <h1>A Taste of Tuscany<br>in the City</h1>
+            <p>Hand-crafted pasta, wood-fired pizzas, and wine poured with love. Experience authentic Italian dining
+                right around the corner.</p>
+            <a href="#reservations" class="btn btn-primary">Book Your Table</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <div class="separator"></div>
+                <p>Osteria was born out of a simple desire: to recreate the loud, joyous, and delicious Sunday dinners
+                    of our childhood in Napoli. We opened our doors ten years ago with a tiny kitchen and a big heart.
+                </p>
+                <p>Today, our Executive Chef Marco still arrives at 5 AM to make the pasta dough by hand. We believe
+                    that good food takes time, and great food relies on the freshest ingredients from local farms.</p>
+                <div class="signature">Chef Marco Rossi</div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Chef preparing fresh pasta">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section class="menu section bg-light" id="menu">
+        <div class="container">
+            <div class="text-center">
+                <h2>Classic Offerings</h2>
+                <div class="separator center"></div>
+            </div>
+
+            <div class="menu-layout">
+                <!-- Primi Piatti -->
+                <article class="menu-category">
+                    <h3>Primi Piatti</h3>
+
+                    <div class="menu-item">
+                        <div class="item-head">
+                            <h4>Pappardelle al Ragù</h4>
+                            <span class="price">$24</span>
+                        </div>
+                        <p>Wide ribbon pasta, slow-cooked beef and pork ragù, parmigiano reggiano.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-head">
+                            <h4>Risotto ai Funghi</h4>
+                            <span class="price">$22</span>
+                        </div>
+                        <p>Arborio rice, wild forest mushrooms, truffle oil, pecorino.</p>
+                    </div>
+                </article>
+
+                <!-- Secondi Piatti -->
+                <article class="menu-category">
+                    <h3>Secondi Piatti</h3>
+
+                    <div class="menu-item">
+                        <div class="item-head">
+                            <h4>Bistecca alla Fiorentina</h4>
+                            <span class="price">$45</span>
+                        </div>
+                        <p>30-day dry aged T-bone, roasted rosemary potatoes, seasonal greens.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-head">
+                            <h4>Branzino Arrosto</h4>
+                            <span class="price">$38</span>
+                        </div>
+                        <p>Whole roasted Mediterranean sea bass, lemon caper butter, fennel salad.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section class="reservations section" id="reservations">
+        <div class="container container-sm">
+            <div class="res-box">
+                <div class="text-center">
+                    <h2>Join Us For Dinner</h2>
+                    <p>We highly recommend booking in advance, especially for weekend evenings.</p>
+                </div>
+
+                <form id="res-form" class="res-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <select id="time" required>
+                                <option value="">Select a time</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="party">Party Size</label>
+                        <select id="party" required>
+                            <option value="">Number of guests</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="large">5+ (Please call)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Find Table</button>
+                    <div id="form-feedback" class="feedback-msg"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-layout">
+            <div class="footer-col">
+                <h3>Osteria.</h3>
+                <p>Bringing the heart and soul of Italian cooking to your neighborhood.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Visit Us</h4>
+                <p>456 Olive Street<br>West End District<br>City, ST 12345</p>
+                <p><a href="tel:5550199">(555) 555-0199</a></p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Hours</h4>
+                <p>Tuesday - Sunday<br>5:00 PM - 10:00 PM<br>Closed Mondays</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Osteria Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

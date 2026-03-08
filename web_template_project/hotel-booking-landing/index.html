@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellaris | Luxury Resort & Spa</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header / Nav -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="brand">Stellaris</a>
+
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#accommodations">Rooms & Suites</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#offers">Special Offers</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="lang-selector">
+                    <span>EN</span> <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <a href="#book" class="btn btn-outline-light">Book Now</a>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Parallax Hero Section -->
+    <section class="hero parallax" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content animate-fade-in">
+            <p class="hero-subtitle">WELCOME TO PARADISE</p>
+            <h1 class="hero-title">Experience Unrivaled<br>Luxury</h1>
+        </div>
+
+        <!-- Booking Bar -->
+        <div class="booking-bar-wrapper animate-slide-up">
+            <form class="booking-bar" id="bookingForm">
+                <div class="booking-field">
+                    <label>Check In</label>
+                    <input type="date" required id="checkin">
+                </div>
+                <div class="booking-field divider">
+                    <label>Check Out</label>
+                    <input type="date" required id="checkout">
+                </div>
+                <div class="booking-field divider">
+                    <label>Guests</label>
+                    <select id="guests">
+                        <option value="1">1 Adult</option>
+                        <option value="2" selected>2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                        <option value="family">Family</option>
+                    </select>
+                </div>
+                <div class="booking-action">
+                    <button type="submit" class="btn btn-primary btn-full">Check Availability</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome section-pad" id="destinations">
+        <div class="container text-center max-w-md">
+            <h2 class="section-title reveal">A Sanctuary for the Soul</h2>
+            <p class="section-text reveal delay-1">Nestled between crystal clear waters and lush tropical hills,
+                Stellaris offers a retreat like no other. Discover a timeless paradise where every detail is
+                meticulously crafted for your absolute comfort and privacy.</p>
+            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Resort Pool" class="welcome-img reveal delay-2">
+        </div>
+    </section>
+
+    <!-- Accommodations -->
+    <section class="accommodations section-pad bg-light" id="accommodations">
+        <div class="container">
+            <div class="flex-between mb-4">
+                <h2 class="section-title reveal">Rooms & Suites</h2>
+                <a href="#" class="link-arrow reveal delay-1">View All <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+            <div class="room-grid">
+                <!-- Room 1 -->
+                <div class="room-card reveal delay-1">
+                    <div class="room-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                    </div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Oceanfront Villa</h3>
+                            <div class="room-price">From <span>$850</span> / night</div>
+                        </div>
+                        <p class="room-desc">Spacious villa featuring a private plunge pool and direct access to the
+                            beach.</p>
+                        <ul class="room-amenities">
+                            <li><i class="fa-solid fa-wifi"></i> Free WiFi</li>
+                            <li><i class="fa-solid fa-water-ladder"></i> Private Pool</li>
+                            <li><i class="fa-solid fa-tv"></i> Apple TV</li>
+                            <li><i class="fa-solid fa-martini-glass"></i> Mini Bar</li>
+                        </ul>
+                        <button class="btn btn-outline-dark w-100">Select Room</button>
+                    </div>
+                </div>
+
+                <!-- Room 2 -->
+                <div class="room-card reveal delay-2">
+                    <div class="room-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89404bb8a0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                    </div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Grand Suite</h3>
+                            <div class="room-price">From <span>$520</span> / night</div>
+                        </div>
+                        <p class="room-desc">Elegant suite with panoramic ocean views and a lavish marble bathroom.</p>
+                        <ul class="room-amenities">
+                            <li><i class="fa-solid fa-wifi"></i> Free WiFi</li>
+                            <li><i class="fa-solid fa-hot-tub-person"></i> Jacuzzi</li>
+                            <li><i class="fa-solid fa-concierge-bell"></i> Room Service 24/7</li>
+                            <li><i class="fa-solid fa-mug-hot"></i> Espresso Machine</li>
+                        </ul>
+                        <button class="btn btn-outline-dark w-100">Select Room</button>
+                    </div>
+                </div>
+
+                <!-- Room 3 -->
+                <div class="room-card reveal delay-3">
+                    <div class="room-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1590490359683-658d3d23f972?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                    </div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Deluxe King Room</h3>
+                            <div class="room-price">From <span>$350</span> / night</div>
+                        </div>
+                        <p class="room-desc">Modern comfort with tropical garden views and a large private balcony.</p>
+                        <ul class="room-amenities">
+                            <li><i class="fa-solid fa-wifi"></i> Free WiFi</li>
+                            <li><i class="fa-solid fa-wind"></i> A/C</li>
+                            <li><i class="fa-solid fa-vault"></i> Safe</li>
+                            <li><i class="fa-solid fa-bed"></i> King Bed</li>
+                        </ul>
+                        <button class="btn btn-outline-dark w-100">Select Room</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Grid -->
+    <section class="experiences section-pad" id="experiences">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title reveal">Unforgettable Experiences</h2>
+            </div>
+
+            <div class="exp-grid">
+                <div class="exp-item reveal delay-1">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Spa">
+                    <div class="exp-overlay">
+                        <h3>Wellness Spa</h3>
+                        <p>Rejuvenate your senses</p>
+                    </div>
+                </div>
+                <div class="exp-item reveal delay-2">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Fine Dining">
+                    <div class="exp-overlay">
+                        <h3>Fine Dining</h3>
+                        <p>Michelin-starred chefs</p>
+                    </div>
+                </div>
+                <div class="exp-item reveal delay-3">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Scuba">
+                    <div class="exp-overlay">
+                        <h3>Ocean Adventures</h3>
+                        <p>Explore the vibrant reef</p>
+                    </div>
+                </div>
+                <div class="exp-item reveal delay-4">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Gym">
+                    <div class="exp-overlay">
+                        <h3>Fitness Center</h3>
+                        <p>State-of-the-art equipment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>Stellaris</h2>
+                <p>123 Paradise Way<br>Maldives</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Spa & Wellness</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="link-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Room</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="newsletter">
+                <h4>Join Our List</h4>
+                <p>Subscribe to receive exclusive offers and news.</p>
+                <form class="nl-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stellaris Resorts & Hotels.</p>
+        </div>
+    </footer>
+
+    <!-- Booking Modal Notification -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-inner">
+                <i class="fa-regular fa-circle-check modal-icon"></i>
+                <h3>Checking Availability...</h3>
+                <p>We are searching for the best rates for your selected dates. Please wait a moment.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

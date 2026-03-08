@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureTech Summit 2026 | Global Tech Conference</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Transparent Header -->
+    <header class="header">
+        <div class="container nav-wrap">
+            <a href="#" class="logo">FutureTech<span>26</span></a>
+            <div class="nav-links">
+                <a href="#speakers">Speakers</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#tickets">Tickets</a>
+                <a href="#venue">Venue</a>
+            </div>
+            <a href="#tickets" class="btn btn-primary btn-sm">Get Tickets</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero overlay-bg">
+        <div class="video-bg">
+            <!-- Simulated Video Background using an image -->
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                alt="Conference Audience">
+        </div>
+
+        <div class="container hero-content text-center">
+            <div class="date-badge fade-up">Oct 12-14, 2026 • Moscone Center, SF</div>
+            <h1 class="fade-up delay-1">The Future is <span class="text-gradient">Now.</span></h1>
+            <p class="subtitle fade-up delay-2">Join 5,000+ innovators, engineers, and creatives for three days of deep
+                technical talks, hands-on workshops, and networking.</p>
+
+            <div class="hero-actions fade-up delay-3">
+                <a href="#tickets" class="btn btn-primary btn-lg">Reserve Your Seat</a>
+                <a href="#speakers" class="btn btn-outline-light btn-lg"><i class="fa-solid fa-play"></i> View
+                    Lineup</a>
+            </div>
+
+            <!-- Countdown Timer -->
+            <div class="countdown-wrapper fade-up delay-4">
+                <p>Prices increase in:</p>
+                <div class="countdown" id="main-countdown">
+                    <div class="time-box"><span class="num">14</span><span class="label">Days</span></div>
+                    <div class="time-box"><span class="num">08</span><span class="label">Hours</span></div>
+                    <div class="time-box"><span class="num">45</span><span class="label">Mins</span></div>
+                    <div class="time-box"><span class="num">12</span><span class="label">Secs</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Prop / Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal-up">
+                    <div class="stat-num">5k+</div>
+                    <div class="stat-label">Attendees</div>
+                </div>
+                <div class="stat-item reveal-up delay-1">
+                    <div class="stat-num">120+</div>
+                    <div class="stat-label">Expert Speakers</div>
+                </div>
+                <div class="stat-item reveal-up delay-2">
+                    <div class="stat-num">50+</div>
+                    <div class="stat-label">Hands-on Workshops</div>
+                </div>
+                <div class="stat-item reveal-up delay-3">
+                    <div class="stat-num">3</div>
+                    <div class="stat-label">Days of Content</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Selection -->
+    <section class="speakers section-pad bg-light" id="speakers">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2>Keynote Speakers</h2>
+                <p>Learn from the visionaries building the next generation of technology.</p>
+            </div>
+
+            <div class="speaker-grid">
+                <!-- Speaker 1 -->
+                <div class="speaker-card reveal-up delay-1">
+                    <div class="speaker-img">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Dr. Sarah Chen">
+                        <div class="speaker-socials">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Dr. Sarah Chen</h3>
+                        <p class="role">Chief AI Scientist @ CloudNova</p>
+                        <p class="topic">Keynote: The Ethics of AGI</p>
+                    </div>
+                </div>
+
+                <!-- Speaker 2 -->
+                <div class="speaker-card reveal-up delay-2">
+                    <div class="speaker-img">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="David Miller">
+                        <div class="speaker-socials">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>David Miller</h3>
+                        <p class="role">VP of Engineering @ QuantumSpace</p>
+                        <p class="topic">Building Resilient Distributed Systems</p>
+                    </div>
+                </div>
+
+                <!-- Speaker 3 -->
+                <div class="speaker-card reveal-up delay-3">
+                    <div class="speaker-img">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Elena Rodriguez">
+                        <div class="speaker-socials">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Elena Rodriguez</h3>
+                        <p class="role">Head of Design @ Nexus UI</p>
+                        <p class="topic">Spatial Computing & UI/UX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center m-top reveal-up delay-4">
+                <a href="#" class="btn btn-outline">View Full Lineup (120+)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Timeline -->
+    <section class="schedule section-pad" id="schedule">
+        <div class="container max-w-lg">
+            <div class="section-header text-center reveal-up">
+                <h2>Agenda Highlights</h2>
+            </div>
+
+            <div class="schedule-tabs reveal-up delay-1">
+                <button class="tab-btn active" data-day="day1">Day 1 (Oct 12)</button>
+                <button class="tab-btn" data-day="day2">Day 2 (Oct 13)</button>
+                <button class="tab-btn" data-day="day3">Day 3 (Oct 14)</button>
+            </div>
+
+            <div class="timeline reveal-up delay-2">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="time">09:00 AM</div>
+                    <div class="content">
+                        <h4>Opening Keynote & Registration</h4>
+                        <p>Main Stage • Dr. Sarah Chen</p>
+                        <span class="track-tag">All Access</span>
+                    </div>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="time">11:00 AM</div>
+                    <div class="content">
+                        <h4>Scaling Micro-Frontends in Enterprise</h4>
+                        <p>Room A • Technical Deep Dive</p>
+                        <span class="track-tag web-dev">Web Dev</span>
+                    </div>
+                </div>
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="time">01:30 PM</div>
+                    <div class="content">
+                        <h4>Lunch & Networking Mixer</h4>
+                        <p>Exhibition Hall</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticket Registration Pricing -->
+    <section class="tickets section-pad bg-dark curve-top" id="tickets">
+        <div class="container text-center">
+            <div class="section-header reveal-up">
+                <h2>Choose Your Pass</h2>
+                <p>Group discounts available for teams of 5 or more.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Digital Pass -->
+                <div class="ticket-card reveal-up delay-1">
+                    <h3>Digital Pass</h3>
+                    <div class="price">
+                        <span class="currency">$</span><span class="amount">299</span>
+                    </div>
+                    <p class="desc">For remote attendees.</p>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> Live stream of all keynotes</li>
+                        <li><i class="fa-solid fa-check"></i> Access to VOD for 30 days</li>
+                        <li><i class="fa-solid fa-check"></i> Digital Swag Bag</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> In-person Workshops</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> VIP Afterparty</li>
+                    </ul>
+                    <button class="btn btn-outline-light btn-block reg-btn">Register Digital</button>
+                </div>
+
+                <!-- Standard Pass -->
+                <div class="ticket-card popular reveal-up delay-2">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Standard Pass</h3>
+                    <div class="price">
+                        <span class="currency">$</span><span class="amount">899</span>
+                    </div>
+                    <p class="desc">Full access to the main conference.</p>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> All Keynotes & Sessions</li>
+                        <li><i class="fa-solid fa-check"></i> Exhibition Hall Access</li>
+                        <li><i class="fa-solid fa-check"></i> Lunch & Coffee Provided</li>
+                        <li><i class="fa-solid fa-check"></i> Official Swag Bag</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> VIP Afterparty</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block reg-btn">Register Standard</button>
+                </div>
+
+                <!-- VIP Pass -->
+                <div class="ticket-card reveal-up delay-3">
+                    <h3>Pro / VIP Pass</h3>
+                    <div class="price">
+                        <span class="currency">$</span><span class="amount">1499</span>
+                    </div>
+                    <p class="desc">The ultimate conference experience.</p>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> Everything in Standard</li>
+                        <li><i class="fa-solid fa-check"></i> Exclusive Hands-on Workshops</li>
+                        <li><i class="fa-solid fa-check"></i> VIP Speaker Lounge Access</li>
+                        <li><i class="fa-solid fa-check"></i> Invite to Exclusive Afterparty</li>
+                        <li><i class="fa-solid fa-check"></i> Reserved Front-Row Seating</li>
+                    </ul>
+                    <button class="btn btn-outline-light btn-block reg-btn">Register VIP</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal (Mockup) -->
+    <div id="regModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Complete Registration</h2>
+            </div>
+            <form id="ticketForm" class="reg-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Work Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Company / Organization</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Job Title</label>
+                    <input type="text" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block m-top">Checkout via Stripe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo">FutureTech<span>26</span></a>
+                <p>The premier event for builders of the future.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <a href="#speakers">Speakers</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#tickets">Pricing</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="mailto:hello@futuretech.com">hello@futuretech.com</a>
+                <a href="#">Sponsor Us</a>
+                <a href="#">Code of Conduct</a>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright border-top">
+            <p>&copy; 2026 FutureTech Conferences LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
